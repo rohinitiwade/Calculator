@@ -3,27 +3,48 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-      <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
-      <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="calculator.css">
   </head>
   <body>
     <div class="container">
-      <h1>Refresh Me</h1>
+      <h1>Welcome To Love Calculator</h1>
+<form class="" action="" method="post">
+
 
       <div class="dice">
-        <p>Player 1</p>
-        <img class="img1" src="images/dice6.png">
-      </div>
+        <p>Your Name </p>
+        <!-- <img class="img1" src="images/dice6.png"> -->
+        <div class="form-group">
 
-      <div class="dice">
-        <p>Player 2</p>
-        <img class="img2" src="images/dice6.png">
-      </div>
-
+      <input type="text" class="form-control text" id="yname" placeholder="Enter Your name" name="yname" required>
+      <span id="yname1" class="error" style="display:none;">Please Enter Your Name</span>
     </div>
-     <script src="index.js" charset="utf-8"></script>
+      </div>
+      <span style="font-size: 47px;">
+❤
+</span>
+      <div class="dice">
+        <p> Crush Name</p>
+        <!-- <img class="img2" src="images/dice6.png"> -->
+        <div class="form-group">
+      <input type="text" class="form-control text" id="pname" placeholder="Enter Your Crush Name" name="pname" required>
+      <span id="uname1" class="error" style="display:none;">Please Enter Your Crush Name</span>
+    </div>
+      </div>
+ <button type="button" class="btn btn-submit" onclick="submitVal()">Calculate Love</button>
+ <br><br><br>
+    <h1 id="showResult" class="blinkh1"> </h1>
+    </form>
+    </div>
+     <script src="calculator.js" charset="utf-8"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   </body>
   <footer>
-    www 🎲 Dice Challenge 🎲 com
+    www 🎲 Love Calculator 🎲 com
   </footer>
+
 </html>
